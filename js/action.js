@@ -22,7 +22,7 @@
 $(document).ready(function() {
      $('button[type="submit"]').attr('disabled','disabled');
      $('input[type="text"]').keyup(function() {
-        if( $('#input-name').val() != '' && $('#input-email').val() != '')  {
+        if( $('#input-name').val() != '' && $('#input-email').val().indexOf('@') >= 0)  {
            $('button[type="submit"]').removeAttr('disabled');
           }
        });
