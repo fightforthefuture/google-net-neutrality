@@ -61,7 +61,8 @@
           <br>
           </div>
           <div class="col-md-4">
-              <div class="sign-widget">
+              <div class="sign-widget" id="action_widget">
+                <div class="sign-content">
                 <h3>Join us calling on Google to come out for strong net neutrality</h3>
                 <form id="action_form" action="https://queue.fightforthefuture.org/action" method="POST">
                   <input type="hidden" name="guard" value=""/>
@@ -70,16 +71,22 @@
                     <label for="hp_disabled"><input type="checkbox" id="hp_disabled" name="hp_disabled" /> Do not check this box</label>
                   </div>
                   <input type="hidden" name="tag" value="googlenetneutrality"/>
-                  <input type="text" name="member[first_name]" placeholder="Name">
-                  <input type="text" name="member[email]" placeholder="Email">
-                  <input type="text" name="meta_data" placeholder="Department">
-                  <input type="submit" value="Sign The Letter">
+                  <input id="input-name" type="text" name="member[first_name]" required placeholder="Name">
+                  <input id="input-email" type="text" name="member[email]" required placeholder="Email">
+                  <input type="checkbox" name="meta_data" required value="Google Employee"> I am a Google Employee
+                  <button id="submit" type="submit" class="btn" value="Sign The Letter">Sign The Letter</button>
                 </form>
                 <div class="legal-text">
                   (your name will not be disclosed)</br>
                   <a href="https://www.fightforthefuture.org" target="_blank">Fight for the Future</a> will contact you about future campaigns. <a href="https://www.battleforthenet.com/privacy/" target="_blank">Privacy Policy</a>
                 </div>
-
+              </div>
+              <div class="share-content">
+                 <h3>Thank you for helping us call on Google to come out for strong net neutrality!</h3>
+                 <a class="facebook share-button" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.googleweneedyoutoo.com" target="_blank"> Share on Facebook</a>
+                 <a class="twitter share-button" href="https://twitter.com/intent/tweet?text=Don%E2%80%99t%20let%20Comcast%20take%20over%20half%20of%20America%E2%80%99s%20Internet.%20Tell%20Congress%20%26%20%40FCC%20to%20%23StoptheTakeover%E2%80%9D%20https%3A%2F%2Fwww.googleweneedyoutoo.com" target="_blank">Share on Twitter</a>
+                 <a class="google share-button" href="https://plus.google.com/share?url=https%3A%2F%2Fwww.googleweneedyoutoo.com" target="_blank">Share on Google+</a>
+              </div>
             </div>
          
         </section>
@@ -172,17 +179,17 @@
 
     <ul class="sharing-buttons">
       <li>
-        <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbattleforthenet.com%2Fcomcast" target="_blank">
+        <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.googleweneedyoutoo.com" target="_blank">
           <img alt="" src="./images/share/facebook.png"> <span class="text">&nbsp; Share on Facebook</span>
         </a>
       </li>
       <li>
-        <a class="twitter" href="https://twitter.com/intent/tweet?text=Don%E2%80%99t%20let%20Comcast%20take%20over%20half%20of%20America%E2%80%99s%20Internet.%20Tell%20Congress%20%26%20%40FCC%20to%20%23StoptheTakeover%E2%80%9D%20https%3A%2F%2Fbattleforthenet.com%2Fcomcast" target="_blank">
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=Don%E2%80%99t%20let%20Comcast%20take%20over%20half%20of%20America%E2%80%99s%20Internet.%20Tell%20Congress%20%26%20%40FCC%20to%20%23StoptheTakeover%E2%80%9D%20https%3A%2F%2Fwww.googleweneedyoutoo.com" target="_blank">
           <img alt="" src="./images/share/twitter.png"> <span class="text">&nbsp; Share on Twitter</span>
         </a>
       </li>
       <li>
-        <a class="pressthis" href="http://www.addtoany.com/add_to/wordpress?linkurl=https%3A%2F%2Fbattleforthenet.com%2Fcomcast&linkname=Stop%20the%20Comcast%20takeover.&linknote=Don%E2%80%99t%20let%20Comcast%20take%20over%20half%20of%20America%E2%80%99s%20Internet.%20Tell%20Congress%20%26%20%40FCC%20to%20%23StoptheTakeover%E2%80%9D" target="_blank">
+        <a class="pressthis" href="http://www.addtoany.com/add_to/wordpress?linkurl=https%3A%2F%2Fwww.googleweneedyoutoo.com&linkname=Stop%20the%20Comcast%20takeover.&linknote=Don%E2%80%99t%20let%20Comcast%20take%20over%20half%20of%20America%E2%80%99s%20Internet.%20Tell%20Congress%20%26%20%40FCC%20to%20%23StoptheTakeover%E2%80%9D" target="_blank">
           <img alt="" src="./images/share/pressthis.png"> <span class="text">&nbsp; Press This</span>
         </a>
       </li>
@@ -192,12 +199,12 @@
         </a>
       </li>
       <li>
-        <a class="googleplus" href="https://plus.google.com/share?url=https%3A%2F%2Fbattleforthenet.com%2Fcomcast" target="_blank">
+        <a class="googleplus" href="https://plus.google.com/share?url=https%3A%2F%2Fwww.googleweneedyoutoo.com" target="_blank">
           <img alt="" src="./images/share/google-plus.png"> <span class="text">&nbsp; Share on Google+</span>
         </a>
       </li>
       <li>
-        <a class="reddit" href="https://www.reddit.com/submit?url=https%3A%2F%2Fbattleforthenet.com%2Fcomcast&amp;title=Don%E2%80%99t%20let%20Comcast%20take%20over%20half%20of%20America%E2%80%99s%20Internet.%20Tell%20Congress%20%26%20%40FCC%20to%20%23StoptheTakeover%E2%80%9D" target="_blank">
+        <a class="reddit" href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.googleweneedyoutoo.com&amp;title=Don%E2%80%99t%20let%20Comcast%20take%20over%20half%20of%20America%E2%80%99s%20Internet.%20Tell%20Congress%20%26%20%40FCC%20to%20%23StoptheTakeover%E2%80%9D" target="_blank">
           <img alt="" src="./images/share/reddit.png"> <span class="text">&nbsp; Share on Reddit</span>
         </a>
       </li>
@@ -225,6 +232,5 @@
           loadChartbeat : function() { oldonload(); loadChartbeat(); };
       })();
     </script> 
-    
   </body>
 </html>

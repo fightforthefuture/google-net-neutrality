@@ -686,15 +686,108 @@ body#google-employees {
                 float: right;
               }
             
-
-              .sign-widget {
+              #action_widget {
                 width: 100%;
                 background: #f9f9f9;
                 border-right: 1px solid #d9d9d9;
                 border-left: 1px solid #d9d9d9;
                 padding: 10px 20px;
+                min-height: 272px;
+                height: auto;
+              }
+
+              .sign-widget {
+                width: 100%;
+
+                 .sign-content {
+                  visibility: visible !important;
+                  height: auto !important;
+                  opacity: 1;
+
+                    h3 {
+                      color: #424242;
+                      margin-top: 0;
+                      line-height: 32px;
+                      text-shadow: none;
+                    }
+
+                    form{
+                      color: #424242;
+                      text-shadow: none;
+                      text-align: left;
+
+                      input {
+                        width: 100%;
+                        margin: 8px 0;
+                        border-radius: 2px;
+                        border: 1px solid #c2c2c2;
+                        padding: 5px;
+                        font-weight: 400;
+                        font-family: 'Proxima Nova', sans-serif;
+                        color: #424242;
+                      }
+                      input[type=checkbox]{
+                        width: auto;
+                        margin-right: 3px;
 
 
+                      }
+                      button[type=submit]{
+                        width: 100%;
+                        margin: 8px 0;
+                        border-radius: 2px;
+                        margin: 10px 0;
+                        padding: 5px;
+                        font-weight: 400;
+                        font-family: 'Proxima Nova', sans-serif;
+                        border: none;
+                        background-color: #5cb85c;
+                        border-color: #4cae4c;
+                        height: 50px;
+                        color: #fff;
+                        font-size: 18px;
+                        font-weight: bold;
+                        text-align: center;
+                        
+                        &:hover {
+                          background-color: #449d44;
+                          border-color: #398439;
+                        }
+
+                        &:disabled {
+                          background-color: #5cb85c;
+                          cursor: default;
+                          opacity: .7;
+                        }
+                      }
+                    }
+                    .legal-text {
+                      text-align: center;
+                      font-size: 11px;
+                      padding: 5px 0;
+                      text-shadow: none;
+                      color: #424242;
+
+                      a {
+                        font-weight: bold;
+                        color: #424242;
+                      }
+                    }
+                  }
+                .share-content {
+                  visibility:hidden !important;
+                  height: 1px !important;
+                  opacity: 0;
+                  -webkit-transition: all .5s ease-in-out;
+                  -moz-transition: all .5s ease-in-out;
+                  -o-transition: all .5s ease-in-out;
+                  transition: all .5s ease-in-out;
+                }
+
+              }
+
+              .share-widget {
+                width: 100%;
                 h3 {
                   color: #424242;
                   margin-top: 0;
@@ -702,58 +795,48 @@ body#google-employees {
                   text-shadow: none;
                 }
 
-                form{
-                  input {
-                    width: 100%;
-                    margin: 8px 0;
-                    border-radius: 2px;
-                    border: 1px solid #c2c2c2;
-                    padding: 5px;
-                    font-weight: 400;
-                    font-family: 'Proxima Nova', sans-serif;
-                    color: #000;
-
-
-                  }
-                  input[type=submit]{
-                    margin: 10px 0;
-                    border: none;
-                    background-color: #5cb85c;
-                    border-color: #4cae4c;
-                    height: 50px;
-                    color: #fff;
-                    font-size: 18px;
-                    font-weight: bold;
-                    
-                    &:hover {
-                      background-color: #449d44;
-                      border-color: #398439;
-                    }
-
-                    &:disabled {
-                      background-color: gray;
-                      cursor: default;
-                      opacity: .3;
-                    }
-                  }
-                }
-                .legal-text {
-                  text-align: center;
-                  font-size: 11px;
-                  padding: 5px 0;
+                .share-content {
+                  visibility: visible !important;
+                  height: auto !important;
+                  opacity: 1;
+                
+                  .share-button {
                   text-shadow: none;
-                  color: #424242;
-
-                  a {
-                    font-weight: bold;
-                    color: #424242;
+                  text-decoration: none;
+                  display: block;
+                  width: 100%;
+                  background: #3b5998;
+                  padding: 10px 0;
+                  margin: 10px 0;
+                  border-radius: 2px;
+                  font-weight: bold;
+                  font-family: 'Proxima Nova', sans-serif;
+                  opacity: .9;
                   }
-                }
-              }
+                  .share-button:hover {
+                  opacity: 1;
+                  }
 
-              
+                  .facebook{
+                  background: #3b5998;
+                
+                  }
+                  .twitter{
+                  background: #00aced;
+                  }
+                  .google{
+                  background: #d34836;
+                  }
+
+                }
+                .sign-content {
+                    visibility:hidden !important;
+                    height: 1px !important;
+                    opacity: 0;
+                    
+                }
             }
-          
+          }
         }
       }
      section.letter {
